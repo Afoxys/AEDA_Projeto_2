@@ -23,6 +23,7 @@ public:
 	bool operator<(const Client &clnt1) const;
 	bool operator==(const Client &clnt1) const;
 	int getNumberProjects();
+	void addProject(Projects proj);
 
 
 };

@@ -3,7 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
-#include "Client.h"
+#include "Company.h"
 
 //Client stored in BST:
 // 1st in order of number of projects
