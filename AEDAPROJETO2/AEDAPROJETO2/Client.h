@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "Projects.h"
+#include "Project.h"
 #include <vector>
 
 using namespace std;
@@ -11,7 +11,7 @@ private:
 	string name;
 	int nif;
 	int contact;
-	vector<Projects> clientProjects;
+	vector<Project> clientProjects;
 
 public:
 	Client();
@@ -23,7 +23,7 @@ public:
 	bool operator<(const Client &clnt1) const;
 	bool operator==(const Client &clnt1) const;
 	int getNumberProjects();
-	void addProject(Projects proj);
+	void addProject(Project proj);
 
 
 };

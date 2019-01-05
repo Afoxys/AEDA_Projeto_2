@@ -6,12 +6,14 @@ Client::Client(){
 	Client::name = "";
 	Client::nif = 0;
 	Client::contact = 0;
+	Client::clientProjects = {};
 }
 
 Client::Client(string name, int nif, int contact) {
 	Client::name = name;
 	Client::nif = nif;
 	Client::contact = contact;
+	Client::clientProjects = {};
 }
 
 int Client::getNIF() {
@@ -38,10 +40,10 @@ void Client::addProject(Projects proj) {
 Client::~Client(){}
 
 bool Client::operator<(const Client &clnt1) const {
-	if(this->getNumberProjects() == clnt1.getNumberProjects()) {
-		return(this->getName() < clnt1.getName());
+	if(this->getNumberProjects == clnt1.getNumberProjects) {
+		return(this->getName < clnt1.getName);
 	}
-	else return(this->getNumberProjects() < clnt1.getNumberProjects());
+	else return(this->getNumberProjects < clnt1.getNumberProjects);
 }
 
 bool Client::operator==(const Client &clnt1) const {
