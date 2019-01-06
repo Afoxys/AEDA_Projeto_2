@@ -32,7 +32,7 @@ int Client::getNumberProjects() {
 	return this->clientProjects.size();
 }
 
-void Client::addProject(Projects proj) {
+void Client::addProject(Project proj) {
 	this->clientProjects.push_back(proj);
 }
 
@@ -40,13 +40,13 @@ void Client::addProject(Projects proj) {
 Client::~Client(){}
 
 bool Client::operator<(const Client &clnt1) const {
-	if(this->getNumberProjects == clnt1.getNumberProjects) {
-		return(this->getName < clnt1.getName);
+	if(this->clientProjects.size() == clnt1.clientProjects.size()) {
+		return(this->name < clnt1.name);
 	}
-	else return(this->getNumberProjects < clnt1.getNumberProjects);
+	else return(this->clientProjects.size() < clnt1.clientProjects.size());
 }
 
 bool Client::operator==(const Client &clnt1) const {
-	return((this->getName == clnt1.getName) && (this->getContact == clnt1.getContact) && (this->getNIF == clnt1.getNIF));
+	return((this->name == clnt1.name) && (this->contact == clnt1.contact) && (this->nif == clnt1.nif));
 }
 

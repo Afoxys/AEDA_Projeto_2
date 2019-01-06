@@ -27,7 +27,7 @@
     <ClInclude Include="BST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Projects.h">
+    <ClInclude Include="Project.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,7 +44,7 @@
     <ClCompile Include="Company.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Projects.cpp">
+    <ClCompile Include="Project.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

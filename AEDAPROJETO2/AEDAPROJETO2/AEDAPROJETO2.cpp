@@ -19,7 +19,7 @@
 
 int main()
 {
-	Client c("BigBoyCompany", 231497318, 910676864);
+	/*Client c("BigBoyCompany", 231497318, 910676864);
 	string name = c.getName();
 	cout << "Name: ";
 	for (size_t i = 0; i < name.size(); i++){
@@ -29,5 +29,17 @@ int main()
 	cout << "NIF: " << c.getNIF() << endl;
 	cout << "Contact: " << c.getContact() << endl;
 
-	Client d;
+	Client d;*/
+	Company c;
+	Client realCompany("Fake", 258314677, 915485265);
+	Client garbageCompany("GoldenGarbage", 258787677, 915455165);
+	Client goodCompany("WeGood", 258315214, 914524567);
+	c.addClient(realCompany);
+	c.addClient(garbageCompany);
+	c.addClient(goodCompany);
+	BST<Client> a = c.getClients();
+	if (a.find(goodCompany) == goodCompany) {
+		cout << "1";
+	}
+	return 0;
 }

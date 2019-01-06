@@ -23,3 +23,7 @@ bool Company::addClient(Client &clnt1) {
 	}
 	else return false;
 }
+
+BST<Client> Company::getClients() {
+	return this->clients;
+}

@@ -1,11 +1,2 @@
-﻿  Client.cpp
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(43): error C3867: 'Client::getNumberProjects': non-standard syntax; use '&' to create a pointer to member
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(44): error C3867: 'Client::getName': non-standard syntax; use '&' to create a pointer to member
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(44): error C2296: '<': illegal, left operand has type 'std::string (__thiscall Client::* )(void)'
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(44): error C2297: '<': illegal, right operand has type 'std::string (__thiscall Client::* )(void)'
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(46): error C3867: 'Client::getNumberProjects': non-standard syntax; use '&' to create a pointer to member
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(46): error C2296: '<': illegal, left operand has type 'int (__thiscall Client::* )(void)'
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(46): error C2297: '<': illegal, right operand has type 'int (__thiscall Client::* )(void)'
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(50): error C3867: 'Client::getName': non-standard syntax; use '&' to create a pointer to member
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(50): error C3867: 'Client::getContact': non-standard syntax; use '&' to create a pointer to member
-c:\users\afonso sá\source\repos\aedaprojeto2\aedaprojeto2\client.cpp(50): error C3867: 'Client::getNIF': non-standard syntax; use '&' to create a pointer to member
+﻿  AEDAPROJETO2.cpp
+  AEDAPROJETO2.vcxproj -> C:\Users\Afonso Sá\source\repos\AEDAPROJETO2\Debug\AEDAPROJETO2.exe
