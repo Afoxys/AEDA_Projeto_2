@@ -19,27 +19,36 @@
 
 int main()
 {
-	/*Client c("BigBoyCompany", 231497318, 910676864);
-	string name = c.getName();
-	cout << "Name: ";
-	for (size_t i = 0; i < name.size(); i++){
-		cout << name[i];
-	}
-	cout << endl;
-	cout << "NIF: " << c.getNIF() << endl;
-	cout << "Contact: " << c.getContact() << endl;
+	bool test1, test2;
+	test1 = false;
+	test2 = false;
 
-	Client d;*/
+	//Creating a new empty company
 	Company c;
+	//Creating new clients
 	Client realCompany("Fake", 258314677, 915485265);
 	Client garbageCompany("GoldenGarbage", 258787677, 915455165);
 	Client goodCompany("WeGood", 258315214, 914524567);
+	//Adding clients to the company
 	c.addClient(realCompany);
 	c.addClient(garbageCompany);
 	c.addClient(goodCompany);
+
+	//Test 1 - Testing the functionality of the BST for added client
 	BST<Client> a = c.getClients();
 	if (a.find(goodCompany) == goodCompany) {
-		cout << "1";
+		test1 = true;
 	}
-	return 0;
+
+	//Test 2 - Testing the functionality of the BST for removed client
+	c.removeClient(goodCompany);
+	BST<Client> b = c.getClients();
+	if (!(b.find(goodCompany) == goodCompany)) {
+		test2 = true;
+	}
+
+	//If both tests work there is an output equal to "Sucess" otherwise the output is wich test failed
+	if (test1 && test2) { cout << "Sucess" << endl; }
+	else if (test1 && !(test2)) { cout << "test2 has failed" << endl; }
+	else if (!(test1) && test2) { cout << "test1 has failed" << endl; }
 }
