@@ -52,8 +52,17 @@ int main()
 	else if (test1 && !(test2)) { cout << "test2 has failed" << endl; }
 	else if (!(test1) && test2) { cout << "test1 has failed" << endl; }
 
+	/* Tests for the hashtable
 	Project joana(18);
-	c.addProject(&joana);
-	cout<<c.getCurrentProjects().at(0)->getId();
-
+	c.addProject(joana);
+	cout<<c.getCurrentProjects().at(0).getId()<<endl;
+	c.completeProject(joana.getId());
+	cout <<"size current: "<< c.getCurrentProjects().size()<<endl;
+	cout << "number of appearances in hashtable: " << c.getFinishedProjects().count(joana)<<endl;
+	c.setProjectAsCurrent(joana);
+	cout << "number of appearances in hashtable: " << c.getFinishedProjects().count(joana)<<endl;
+	cout << "size current: " << c.getCurrentProjects().size() << endl;
+	c.deleteFinishedProject(joana);
+	cout << "number of appearances in hashtable: " << c.getFinishedProjects().count(joana) << endl;
+	*/
 }

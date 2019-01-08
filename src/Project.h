@@ -9,6 +9,6 @@ class Project
 public:
 	Project(int id) { this->id = id; }
 	~Project();
-	int getId(){ return id; }
+	int getId() const{ return id; }
 };
 
