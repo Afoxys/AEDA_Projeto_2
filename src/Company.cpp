@@ -1,9 +1,15 @@
 #include "pch.h"
 #include "Company.h"
 
+/**
+* @brief Default constructor for the class Company
+*/
 Company::Company() :clients(Client("",0,0)) {}
 
-
+/**
+* @brief Constructor for the class Company
+* @param clientTree - BST<Client> that belongs to the company to be constructed
+*/
 Company::Company(BST<Client> clientTree) : clients(clientTree){
 }
 
@@ -12,9 +18,14 @@ Company::~Company()
 {
 }
 
-bool Company::addClient(Client &clnt1) {
+/**
+* @brief Adds an object of the class Client to the BST
+* @param clnt - Client to be added
+* @return  true if the client was added successfully, and false if it was not
+*/
+bool Company::addClient(Client &clnt) {
 	Client notFound("", 0, 0);
-	Client newClient(clnt1.getName(), clnt1.getNIF(), clnt1.getContact());
+	Client newClient(clnt.getName(), clnt.getNIF(), clnt.getContact());
 	Client findAttempt = clients.find(newClient);
 
 	if (findAttempt == notFound) {
@@ -24,6 +35,11 @@ bool Company::addClient(Client &clnt1) {
 	else return false;
 }
 
+/**
+* @brief Removes an object of the class Client from the BST
+* @param clnt - Client to be removed
+* @return  true if the client was removed successfully, and false if it was not
+*/
 bool Company::removeClient(Client &clnt1) {
 	Client notFound("", 0, 0);
 	Client newClient(clnt1.getName(), clnt1.getNIF(), clnt1.getContact());
@@ -36,6 +52,10 @@ bool Company::removeClient(Client &clnt1) {
 	else return false;
 }
 
+/**
+* @brief Returns the BST of that company
+* @return  BST<Client> of the company
+*/
 BST<Client> Company::getClients() {
 	return this->clients;
 }
