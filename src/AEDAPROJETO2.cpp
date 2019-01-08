@@ -51,4 +51,9 @@ int main()
 	if (test1 && test2) { cout << "Sucess" << endl; }
 	else if (test1 && !(test2)) { cout << "test2 has failed" << endl; }
 	else if (!(test1) && test2) { cout << "test1 has failed" << endl; }
+
+	Project joana(18);
+	c.addProject(&joana);
+	cout<<c.getCurrentProjects().at(0)->getId();
+
 }

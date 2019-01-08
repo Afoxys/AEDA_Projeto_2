@@ -39,3 +39,16 @@ bool Company::removeClient(Client &clnt1) {
 BST<Client> Company::getClients() {
 	return this->clients;
 }
+
+/**
+* @brief Adds a project to the company
+* @param project - pointer to project to add
+*/
+void Company::addProject(Project* project) {
+	currentProjects.push_back(project);
+}
+
+/**
+* @brief returns a vector with the current projects
+*/
+vector<Project*> Company::getCurrentProjects() { return currentProjects; }

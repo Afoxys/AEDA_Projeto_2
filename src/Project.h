@@ -5,8 +5,10 @@ project we were not able to compile our code and thus we are not using the code 
 
 class Project
 {
+	int id;
 public:
-	Project();
+	Project(int id) { this->id = id; }
 	~Project();
+	int getId(){ return id; }
 };
 

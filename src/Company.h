@@ -14,7 +14,10 @@ public:
 	bool addClient(Client &clnt1);
 	bool removeClient(Client &clnt1);
 	BST<Client> getClients();
+	void addProject(Project* project);
+	vector<Project*> getCurrentProjects();
 private:
 	BST<Client> clients;
+	vector<Project*> currentProjects;
 };
 
