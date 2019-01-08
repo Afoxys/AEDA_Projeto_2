@@ -10,3 +10,7 @@ Project::Project()
 Project::~Project()
 {
 }
+
+bool Project::addTicket(Ticket ticket) {
+	priorityQueue.push(ticket);
+}
