@@ -13,5 +13,7 @@ public:
 	~Project();
 	priority_queue<Ticket> priorityQueue;
 	bool addTicket(Ticket ticket);
+	Ticket getMostPriority();
+	void returnTickets(vector<Ticket> tickets);
 };
 
