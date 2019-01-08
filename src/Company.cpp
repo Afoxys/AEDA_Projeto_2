@@ -19,7 +19,7 @@ Company::~Company()
 }
 
 /**
-* @brief Adds an object of the class Client to the BST
+* @brief Function to add an object of the class Client to the BST
 * @param clnt - Client to be added
 * @return  true if the client was added successfully, and false if it was not
 */
@@ -36,7 +36,7 @@ bool Company::addClient(Client &clnt) {
 }
 
 /**
-* @brief Removes an object of the class Client from the BST
+* @brief Function to remove an object of the class Client from the BST
 * @param clnt - Client to be removed
 * @return  true if the client was removed successfully, and false if it was not
 */
