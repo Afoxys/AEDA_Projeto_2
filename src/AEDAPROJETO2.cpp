@@ -19,38 +19,54 @@
 
 int main()
 {
-	bool test1, test2;
-	test1 = false;
-	test2 = false;
+	/*Test for the BST
 
 	//Creating a new empty company
-	Company c;
+	Company gud;
 	//Creating new clients
-	Client realCompany("Fake", 258314677, 915485265);
-	Client garbageCompany("GoldenGarbage", 258787677, 915455165);
-	Client goodCompany("WeGood", 258315214, 914524567);
+	Client realClient("fakeComapny", 258314677, 915485265);
+	//Creating new projects
+	Project a(1);
+	Project b(2);
+	Project d(4);
+	//Adding projects to realClient
+	realClient.addProject(a);
+	realClient.addProject(b);
+	realClient.addProject(d);
+	Client badClient("Golden", 258787677, 915455165);
+	Project e(5);
+	Project f(6);
+	badClient.addProject(e);
+	badClient.addProject(f);
+	Client goodClient("Good", 258315214, 914524567);
 	//Adding clients to the company
-	c.addClient(realCompany);
-	c.addClient(garbageCompany);
-	c.addClient(goodCompany);
+	gud.addClient(realClient);
+	gud.addClient(badClient);
+	gud.addClient(goodClient);
 
 	//Test 1 - Testing the functionality of the BST for added client
-	BST<Client> a = c.getClients();
-	if (a.find(goodCompany) == goodCompany) {
-		test1 = true;
+	BST<Client> first = gud.getClients();
+	if (first.find(goodClient) == goodClient) {
+		cout << "The client goodCompany has been successfully added " << endl;
 	}
 
 	//Test 2 - Testing the functionality of the BST for removed client
-	c.removeClient(goodCompany);
-	BST<Client> b = c.getClients();
-	if (!(b.find(goodCompany) == goodCompany)) {
-		test2 = true;
+	gud.removeClient(goodClient);
+	BST<Client> second = gud.getClients();
+	if (!(second.find(goodClient) == goodClient)) {
+		cout << "The client goodCompany has been successfully removed " << endl;
 	}
 
-	//If both tests work there is an output equal to "Sucess" otherwise the output is wich test failed
-	if (test1 && test2) { cout << "Sucess" << endl; }
-	else if (test1 && !(test2)) { cout << "test2 has failed" << endl; }
-	else if (!(test1) && test2) { cout << "test1 has failed" << endl; }
+	//Test 3 - Testing the order of the BST named second
+	Client bstSize = second.findMax();
+	string name = bstSize.getName();
+	cout << "The biggest client is: ";
+	for (size_t i = 0; i < name.size(); i++){
+		cout << name[i];
+	}
+	cout << endl;
+	*/
+	
 
 	/* Tests for the hashtable
 	Project joana(18);
