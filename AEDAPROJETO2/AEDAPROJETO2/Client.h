@@ -19,10 +19,10 @@ public:
 	string getName();
 	int getNIF();
 	int getContact();
-	int getNumberProjects();
 	~Client();
 	bool operator<(const Client &clnt1) const;
 	bool operator==(const Client &clnt1) const;
+	int getNumberProjects();
 	void addProject(Project proj);
 
 
