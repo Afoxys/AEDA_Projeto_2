@@ -13,6 +13,7 @@ Project::~Project()
 
 bool Project::addTicket (Ticket ticket) {
 	priorityQueue.push(ticket);
+	return true;
 }
 
 Ticket Project::getMostPriority () {

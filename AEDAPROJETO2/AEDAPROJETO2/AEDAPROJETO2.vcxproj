@@ -156,6 +156,7 @@
     <ClInclude Include="Company.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Project.h" />
+    <ClInclude Include="Ticket.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AEDAPROJETO2.cpp" />
@@ -168,6 +169,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Project.cpp" />
+    <ClCompile Include="Ticket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
